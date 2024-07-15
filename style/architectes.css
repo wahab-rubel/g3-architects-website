@@ -30,6 +30,16 @@
  font-weight: 600;
  margin-bottom: 32px;
 }
+main >section{
+ margin-top: 130px;
+}
+main{
+ max-width: 1476px;
+ margin: 0 auto;
+}
+span{
+ color: rgba(255, 144, 14, 1);
+}
 
 /* ---------------------------text-light-gray dark2 3------------------------- */
 
@@ -82,23 +92,40 @@
  width: 100%;
 }
 
+/* team features relataed styles */
+.teams{
+ align-items: center;
+ padding: 6rem;
+}
+.features-title{
+ font-size: 2.2rem;
+ font-weight: 700;
+}
+#Quick-list{
+ font-weight: 500;
+}
+.our-features{
+padding: 70px;
+max-width: 500px;
+ 
+}
+.team-img-container{
+ display: grid;
+ gap: 24px;
+ border-redius: 4px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* banner respocive */
+/* media quary banner respocive */
 
 @media screen and (max-width: 576px){
- .display-flex{
+ .navbar,
+ .nav-links,
+ .teams{
   flex-direction: column;
  }
+ .team-img-container{
+  grid-template-columns: repeat(1, 1fr);
+ }
+ 
 }
