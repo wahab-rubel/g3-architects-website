@@ -111,6 +111,7 @@ max-width: 500px;
 }
 .team-img-container{
  display: grid;
+ grid-template-columns: repeat(2, 1fr);
  gap: 24px;
  border-redius: 4px;
 }
@@ -123,9 +124,28 @@ max-width: 500px;
  .nav-links,
  .teams{
   flex-direction: column;
+  padding: 0 auto;
  }
  .team-img-container{
   grid-template-columns: repeat(1, 1fr);
  }
- 
+
+ .our-features{
+  padding: 0 auto;
+  width: 100%;
+ }
+}
+
+/* medium size devesice */
+@media screen and (min-width: 576) and (max-width: 992px){
+.teams{
+ flex-decoration: column;
+}
+.team-img-container{
+ grid-template-columns: repeat(1, 1fr);
+}
+.our-features{
+grid-template-columns: repeat(1, 1fr);
+ margin: 50px auto;
+}
 }
